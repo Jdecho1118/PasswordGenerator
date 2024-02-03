@@ -1,7 +1,3 @@
-Certainly! Here's a basic README content for the provided Python password generator code:
-
----
-
 # Python Password Generator
 
 ## Overview
