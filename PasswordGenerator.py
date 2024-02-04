@@ -48,7 +48,6 @@ def shuffle_password(password):
     random.shuffle(password_list)
     return ''.join(password_list)
 
-# Improved user interface using f-strings
 print("Welcome to the Password Generator!")
 try:
     password_length = int(input("Enter the desired length of the password: "))
@@ -56,12 +55,10 @@ except ValueError:
     print("Invalid input. Using default password length of 12.")
     password_length = 12
 
-# Simplified user input handling
 use_lowercase = input("Include lowercase letters? (y/n): ").lower() == 'y'
 use_uppercase = input("Include uppercase letters? (y/n): ").lower() == 'y'
 use_digits = input("Include digits? (y/n): ").lower() == 'y'
 use_special = input("Include special characters? (y/n): ").lower() == 'y'
 
-# Example: Generate a password based on user input
 generated_password = generate_password(password_length, use_lowercase, use_uppercase, use_digits, use_special)
 print(f"Generated Password: {generated_password}")
